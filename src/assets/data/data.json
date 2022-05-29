@@ -1,0 +1,28 @@
+{
+
+    "name" : "Juan Cruz Anderson",
+    "position" : "Full Stack Developer Jr",
+    "Company" : {
+        "Name" : "Argentina Programa"
+    },
+    "School" : {
+        "Name" : "Facultad de Matematica,Astronomia,Fisica & Computacion"
+    },
+    "Ubicacion": "La Cumbre,Córdoba (Argentina)",
+    "About" : "Developer Full Stack Jr & HTML/CSS, JavaScript, Java, Base de Datos, DevOps",
+    "Email" : "andersonjuancruz97@gmail.com",
+    
+    "Education" : {
+        "school" : "Facultad de Matematica,Astronomia,Fisica & Computacion",
+        "Title" : "Licenciatura en Computacion",
+        "Start" : "Marzo 2020",
+        "End" : "Actualidad",
+        "TimeLapsed" : "2 Años y 3 Meses"
+
+    }
+
+    
+
+
+
+}
