@@ -104,6 +104,7 @@ body {
     white-space: nowrap;
     transition:0,3s;
     position: relative;
+    text-decoration: none;
   
   }
   
@@ -300,10 +301,10 @@ body {
   .skills .progress-bar {
     width: 1px;
     height: 10px;
-    transition: 0.9s;
+    transition: all 2s ease .5s;
     background-color: #34b7a7;
   }
-  
+
   
   /* EDUCACION Y PROYECTO */
   
@@ -363,12 +364,15 @@ body {
   }
   
   .contacto {
-    width: 100%;
+    width: 70%;
+    margin-left: 280px;
     background-color: #fff;
+    
   }
   
   .contacto .form-group {
     padding-bottom: 8px;
+    
   }
   
   .contacto input, .contacto textarea:focus {
@@ -377,10 +381,12 @@ body {
   
   .contacto input {
     height: 44px;
+    
   }
   
   .contacto textarea {
     padding:10px 12px;
+    border-color: #34b7a7;
   }
   
   .contacto button[type=submit] {
