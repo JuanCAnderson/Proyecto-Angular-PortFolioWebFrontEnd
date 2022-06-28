@@ -16,6 +16,8 @@ body {
   h1, h2 , h3 , h4 ,h5 ,h6 {
     font-family:'Raleway',sans-serif;
   }
+
+  
   
   #main {
     margin-top: 50px ;
@@ -25,6 +27,7 @@ body {
     #main {
       margin: top 30px;
     }
+    
   }
   
   
@@ -240,6 +243,16 @@ body {
     margin-left: 5px;
   }
   
+  div.avatar {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 350px;
+    width: 350px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
   
   
   
@@ -358,7 +371,8 @@ body {
   }
   
   /* Contacto */
-  
+
+ 
   .section-title{
     text-align: center;
   }
