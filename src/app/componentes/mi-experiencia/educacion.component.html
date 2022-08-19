@@ -1,0 +1,56 @@
+<!--ESTA ES LA SECCION DE EXPERIENCIA-->
+
+
+
+<section id="experiencia" class="educacion">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Experiencia</h2>
+
+      <div class="col-lg-6">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaexp">Nueva Experiencia</button>
+      </div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6">
+
+
+        <div class="col-lg-11">
+          <div class="educacion-item pb-0">
+            <table class="table">
+              <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                  <td>
+                    <h4>{{Experiencia.nombreE}}</h4>
+                  </td>
+                  <td>
+                    <p><em>{{Experiencia.descripcionE}}</em></p>
+                  </td>
+                  <td><button class="btn btn-secondary btn-md" routerLink="/editexp/{{Experiencia.id}}">
+                      Editar <i class="bi bi-pencil-fill"></i>
+                    </button></td>
+                  <td><button class="btn btn-danger btn-md" (click)="delete(Experiencia.id)">
+                      Borrar <i class="bi bi-trash2"></i>
+                    </button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+</section>

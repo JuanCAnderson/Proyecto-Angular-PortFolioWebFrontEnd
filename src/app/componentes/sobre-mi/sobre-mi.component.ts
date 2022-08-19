@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicios/portfolio.service';
+import { persona } from 'src/app/model/persona.model';
+import { PersonaService } from 'src/app/service/persona.service';
+
 @Component({
   selector: 'app-sobre-mi',
   templateUrl: './sobre-mi.component.html',
@@ -7,14 +9,14 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 })
 export class SobreMiComponent implements OnInit {
 
+  persona: persona = new persona("","","","","","","");
+
   miPortfolio:any;
-  constructor(private datosPortfolio:PortfolioService) { }
+  constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
-      console.log(data);
-      this.miPortfolio = data;
-    });
+      this.personaService.getPersona().subscribe(data =>{this.persona = data});
+    }
   }
 
-}
+
