@@ -16,7 +16,10 @@ import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 import { NewExperienciaComponent } from './componentes/mi-experiencia/new-experiencia.component';
 import { ExperienciaComponent } from './componentes/mi-educacion/experiencia.component';
-import { EditExperienciaComponent } from './componentes/mi-experiencia/edit-experiencia/edit-experiencia.component'
+import { EditExperienciaComponent } from './componentes/mi-experiencia/edit-experiencia/edit-experiencia.component';
+import { NeweducacionComponent } from './componentes/mi-educacion/neweducacion.component';
+import { EditeducacionComponent } from './componentes/mi-educacion/editeducacion/editeducacion.component'
+
 
 
 
@@ -35,6 +38,8 @@ import { EditExperienciaComponent } from './componentes/mi-experiencia/edit-expe
     NewExperienciaComponent,
     ExperienciaComponent,
     EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
 
 
    

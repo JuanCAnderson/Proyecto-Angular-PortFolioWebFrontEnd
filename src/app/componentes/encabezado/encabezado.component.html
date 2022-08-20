@@ -1,4 +1,6 @@
 <header id="header" class="fixed-top sticky-top py-1" >
+   
+  
     <div class="container-fluid d-flex justify-content-between align-items-center">
        
         <span>
@@ -8,6 +10,9 @@
           
       
       
+
+       
+
       <nav id="navbar" class="navbar order-last order-lg-0 ">
         <ul>
           <li><a class="active" href="#hero">Inicio</a></li>
@@ -19,6 +24,7 @@
         </ul>
         
       </nav><!-- .navbar -->
+      
 
       <div class="header-social-links">
        <a href="https://www.instagram.com/andersonjuanc/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
@@ -26,10 +32,13 @@
      </div>
 
      <form action="login.html" class="login">
-        <button class="btn btn-outline-success" type="submit" (click)="login()">Login</button>
+        <button class="btn btn-outline-success" type="submit" (click)="login()" *ngIf="!isLogged">Login</button>
         
       </form>
 
+      <button type="button" class="btn btn-outline-light" (click)="onLogOut()"*ngIf="isLogged">CERRAR SESION</button>
+
     </div>
+ 
 
   </header>
