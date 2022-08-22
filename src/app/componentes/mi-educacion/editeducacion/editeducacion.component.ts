@@ -36,6 +36,7 @@ export class EditeducacionComponent implements OnInit {
     this.educacionService.update(id, this.educacion).subscribe(
       data => {
         this.router.navigate(['']);
+        alert("Educacion actualizada")
       }, err => {
         alert("Error al modificar la educacion");
         this.router.navigate(['']);

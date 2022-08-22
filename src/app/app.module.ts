@@ -18,7 +18,10 @@ import { NewExperienciaComponent } from './componentes/mi-experiencia/new-experi
 import { ExperienciaComponent } from './componentes/mi-educacion/experiencia.component';
 import { EditExperienciaComponent } from './componentes/mi-experiencia/edit-experiencia/edit-experiencia.component';
 import { NeweducacionComponent } from './componentes/mi-educacion/neweducacion.component';
-import { EditeducacionComponent } from './componentes/mi-educacion/editeducacion/editeducacion.component'
+import { EditeducacionComponent } from './componentes/mi-educacion/editeducacion/editeducacion.component';
+import { NewproyectoComponent } from './componentes/proyectos/newproyecto.component';
+import { EditproyectoComponent } from './componentes/proyectos/editproyecto.component';
+
 
 
 
@@ -40,6 +43,9 @@ import { EditeducacionComponent } from './componentes/mi-educacion/editeducacion
     EditExperienciaComponent,
     NeweducacionComponent,
     EditeducacionComponent,
+    NewproyectoComponent,
+    EditproyectoComponent
+
 
 
    
