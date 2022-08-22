@@ -4,18 +4,39 @@
       <div class="section-title">
         <h2>Proyectos</h2>
 
-        
-        
-        
-       
-
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>Algunos de mis proyectos realizados</p>
       </div>
+
+      <div class="col-lg-7 mx-auto style=width:100%">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaproyecto" *ngIf="isLogged">Nuevo Proyecto</button>
+      </div>
+
+      <div class="col-lg-11">
+        <div class="educacion-item pb-0">
+          <table class="table">
+            <tbody>
+              <tr *ngFor="let Proyecto of proyecto">
+                <td>
+                  <h4>{{Proyecto.nombreE}}</h4>
+                </td>
+                <td>
+                  <p><em>{{Proyecto.descripcionE}}</em></p>
+                </td>
+                <td *ngIf="isLogged"><button class="btn btn-secondary btn-md" routerLink="/editproyecto/{{Proyecto.id}}">
+                    Editar <i class="bi bi-pencil-fill"></i>
+                  </button></td>
+                <td *ngIf="isLogged"><button class="btn btn-danger btn-md" (click)="delete(Proyecto.id)">
+                    Borrar <i class="bi bi-trash2"></i>
+                  </button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
       <div class="row">
         <div class="col-lg-6">
           
-          <div class="educacion-item pb-0">
+          <div class="educacion-item ">
             <h4><u>Proyecto Dulces La Tata</u></h4>
             <p><em>El primer Proyecto que hice, con conocimientos muy basicos de Front - End. Proyecto para mi familia, como idea base una tienda virtual.</em></p>
             <p>
@@ -85,7 +106,10 @@
 
         </div>
       </div>
-
+      </div>
     </div>
+  
+
+    
   </section>
 
