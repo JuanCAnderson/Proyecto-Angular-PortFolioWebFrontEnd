@@ -19,16 +19,28 @@ body {
   }
   
   
-  @media screen and (max-width: 940px) {
+  @media (max-width: 768px) {
 
     h1{
       text-align: center;
     }
 
-    .navbar {
+    .navbar ul {
       position:static;
+      flex-direction: column;
     }
 
+    .d-flex{
+      flex-direction: column;
+    }
+
+    .login {
+      margin-right: -13px;
+      margin-top: 22px;
+    }
+
+    
+    
   }
 
   
